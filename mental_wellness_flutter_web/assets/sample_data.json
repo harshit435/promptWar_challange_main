@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp": "2026-06-05T09:15:00Z",
+    "mood": 8,
+    "stressLevel": 3,
+    "sleepHours": 7.5,
+    "mockTestScore": 84.0,
+    "note": "Felt good after reviewing study notes. Sleep was refreshing.",
+    "reframingNote": "Even if the exam is close, daily progress is what counts.",
+    "tags": ["Revision", "Sleep"]
+  },
+  {
+    "timestamp": "2026-06-04T18:30:00Z",
+    "mood": 4,
+    "stressLevel": 8,
+    "sleepHours": 5.0,
+    "mockTestScore": 58.5,
+    "note": "Panicked during the Physics mock test. Time ran out quickly.",
+    "reframingNote": "Mock tests are for practice. Mistakes now mean fewer mistakes on the real exam.",
+    "tags": ["Mock Test", "Physics", "Backlog"]
+  },
+  {
+    "timestamp": "2026-06-03T21:45:00Z",
+    "mood": 6,
+    "stressLevel": 6,
+    "sleepHours": 6.5,
+    "mockTestScore": null,
+    "note": "Struggled with organic chemistry but group study session with Rohit helped.",
+    "reframingNote": "I don't need to know everything tonight. Learning bit by bit is progress.",
+    "tags": ["Study Group", "Chemistry"]
+  },
+  {
+    "timestamp": "2026-06-02T08:00:00Z",
+    "mood": 5,
+    "stressLevel": 7,
+    "sleepHours": 5.5,
+    "mockTestScore": 62.0,
+    "note": "Didn't sleep well due to exam anxiety.",
+    "reframingNote": "My value is not defined by a single exam. I will sleep earlier tonight.",
+    "tags": ["Sleep Loss", "Anxiety"]
+  },
+  {
+    "timestamp": "2026-06-01T20:15:00Z",
+    "mood": 7,
+    "stressLevel": 4,
+    "sleepHours": 7.0,
+    "mockTestScore": null,
+    "note": "Completed today's maths syllabus backlog. Felt productive.",
+    "reframingNote": "Consistency builds confidence. I am on the right path.",
+    "tags": ["Maths", "Backlog"]
+  }
+]
