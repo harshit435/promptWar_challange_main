@@ -79,7 +79,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               borderRadius: BorderRadius.circular(22),
                             ),
                             child: const Icon(Icons.spa_rounded,
-                                color: Color(0xFF0C0E1A), size: 38),
+                                color: Color(0xFF0C0E1A), size: 38,
+                                semanticLabel: 'ZenPrep Sanctuary Logo'),
                           ),
                           const SizedBox(height: 20),
                           const Text(
@@ -109,15 +110,15 @@ class _LoginScreenState extends State<LoginScreen> {
                               labelText: 'Email',
                               labelStyle: TextStyle(
                                   color: Colors.white.withOpacity(0.7)),
-                              prefixIcon: const Icon(Icons.email_outlined),
+                              prefixIcon: const Icon(Icons.email_outlined, semanticLabel: 'Email icon'),
                               filled: true,
                               fillColor: Colors.white.withOpacity(0.05),
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(16)),
                               enabledBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(16),
-                                borderSide: BorderSide(
-                                    color: Colors.white.withOpacity(0.08)),
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: BorderSide(
+                                      color: Colors.white.withOpacity(0.08)),
                               ),
                             ),
                             validator: (value) {
@@ -139,13 +140,15 @@ class _LoginScreenState extends State<LoginScreen> {
                               labelText: 'Password',
                               labelStyle: TextStyle(
                                   color: Colors.white.withOpacity(0.7)),
-                              prefixIcon: const Icon(Icons.lock_outline),
+                              prefixIcon: const Icon(Icons.lock_outline, semanticLabel: 'Password icon'),
                               suffixIcon: IconButton(
                                 onPressed: () => setState(
                                     () => _obscurePassword = !_obscurePassword),
+                                tooltip: _obscurePassword ? 'Show password' : 'Hide password',
                                 icon: Icon(_obscurePassword
                                     ? Icons.visibility_outlined
-                                    : Icons.visibility_off_outlined),
+                                    : Icons.visibility_off_outlined,
+                                    semanticLabel: _obscurePassword ? 'Show password' : 'Hide password'),
                               ),
                               filled: true,
                               fillColor: Colors.white.withOpacity(0.05),

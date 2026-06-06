@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'services/state_manager.dart';
 import 'screens/main_navigation.dart';
 import 'screens/login_screen.dart';
@@ -6,6 +7,9 @@ import 'screens/entry_form.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Force enable semantics overlay in DOM tree on load for automated scanners
+  SemanticsBinding.instance.ensureSemantics();
 
   // Initialize state manager and load cached entries
   final state = StateManager();
